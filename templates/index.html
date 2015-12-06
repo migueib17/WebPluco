@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>PLUCO - {% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="/static/css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background-green">
+		background
+	</div>
+	<div class="page">
+		<div class="home-page">
+			{% block  panelLateral%}
+			<div class="sidebar">
+  			<a href="/" id="logo"><img src="/static/images/logo1.png" alt="logo" height="110" width="110"></a>
+  			<ul>
+    			<li class="home">
+      			<a href="/">Inicio</a>
+    			</li>
+    			<li class="about">
+      			<a href="/perfil">Información</a>
+    			</li>
+    			<li class="projects">
+      			<a href="https://github.com/migueib17/IV-PLUCO-MFF">Projectos</a>
+    			</li>
+    			<li class="blog">
+      			<a href="/register">Registro</a>
+    			</li>
+    			<li class="contact">
+      			<a href="/register">Contacto</a>
+    			</li>
+  		</ul>
+		</div>
+	{% endblock %}
+			<div class="body">
+				<div class="content-home">
+					{% block cabeceraTitulo %}
+					<div>
+						<h1>We are interior architects. What is <span class="beauty">beauty</span> without use. What is <span class="function">function</span> without aesthetics. our <span class="works">works have both</span>.</h1>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
+						</p>
+					</div>
+					<div class="botonera">Login</button></a>
+					  <a href="/register"><button>Registro</button></a>
+					</div>
+					{% endblock %}
+					{% block articuloPrincipal %}
+					<div class="featured">
+						<img src="static/images/bed.jpg" alt="">
+					</div>
+					{% endblock %}
+					{% block extra %}
+					<div>
+						<ul>
+							<li>
+								<h2><a href="blog.html">Asignaturas</a></h2>
+								<a href="blog.html"><img src="/static/images/libros.png" width="230px" height="205px" alt=""></a>
+								<h3><a href="blog.html">Directorio de Asignaturas</a></h3>
+								<p>
+									Accede a las asignaturas que más te interesen en un gran listado de especialidades.
+								</p>
+								<a href="blog.html">Asignaturas actualizadas</a>
+							</li>
+							<li>
+								<h2><a href="projects.html">Foros</a></h2>
+								<a href="projects.html"><img src="/static/images/Bocadillo.png" width="200px" height="185px" alt=""></a>
+								<h3><a href="projects.html">Foros / Dudas</a></h3>
+								<p>
+									Aquí está este recopilario de respuestas que hay por ahí para las típicas preguntas que se hace la gente, espero que os sirva de ayuda. Se aceptan aportaciones!
+
+									Si alguien necesita saber algo que pregunte...
+								</p>
+								<a href="projects.html">Ver últimos foros</a>
+							</li>
+							<li>
+								<h2><a href="blog.html">Nube</a></h2>
+								<a href="blog.html"><img src="/static/images/nube1.png" width="230px" height="205px" alt=""></a>
+								<h3><a href="blog.html">Almacenamiento en la nube</a></h3>
+								<p>
+									Accede a tus archivos desde cualquier dispositivo y lugar.
+								</p>
+								<a href="blog.html">Últimos archivos compartidos</a>
+							</li>
+						</ul>
+					</div>
+					{% endblock %}
+				</div>
+
+				{% block footer  %}
+				<div class="footer" STYLE="margin-top: 125px; margin-left: -173px;">
+					<p>
+						&#169; 2015-2016 Miguel Fernández Fernández
+					</p>
+					<ul>
+						<li>
+							<a href="/">Inicio</a>
+						</li>
+						<li>
+							<a href="https://github.com/migueib17/IV-PLUCO-MFF">Información</a>
+						</li>
+						<li>
+							<a href="https://github.com/migueib17/IV-PLUCO-MFF">Projectos</a>
+						</li>
+						<li>
+							<a href="/register">Registro</a>
+						</li>
+						<li>
+							<a href="/contact">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			{% endblock %}
+
+		</div>
+	</div>
+</body>
+</html>

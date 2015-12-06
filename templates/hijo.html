@@ -1,0 +1,76 @@
+{% extends "index.html" %}
+{% block title %}
+  {% if usuario %}
+    {{usuario}}
+  {% else %}
+    Principal
+    {% endif %}
+{% endblock %}
+
+{% block panelLateral %}
+<div class="sidebar">
+  <a href="/" id="logo"><img src="/static/images/logo1.png" alt="logo" width=110 height=110></a>
+  <ul>
+    <li class="home">
+      <a href="/">Inicio</a>
+    </li>
+    <li class="about">
+      {% if usuario %}
+      <a href="/perfil">Perfil</a>
+      {% else %}
+      <a href="https://github.com/migueib17/IV-PLUCO-MFF">Información</a>
+      {% endif %}
+    </li>
+    <li class="projects">
+      <a href="https://github.com/migueib17/IV-PLUCO-MFF">Projectos</a>
+    </li>
+    <li class="blog">
+      {%if usuario %}
+      <a href="/perfil">Editar</a>
+    </li>
+    {% else %}
+      <a href="/register">Registro</a>
+    {% endif %}
+    <li class="contact">
+      <a href="/contact">Contacto</a>
+    </li>
+  </ul>
+</div>
+{% endblock %}
+{% block cabeceraTitulo %}
+{% if usuario %}
+  <div class="botonera">
+    <a href="/logout"><button>Logout</button></a>
+  </div>
+{% else %}
+<div class="botonera">
+  <a href="/login"><button>Login</button></a>
+  <a href="/register"><button>Registro</button></a>
+</div>
+{% endif %}
+<div>
+  <h3><span class="beauty">PLUCO</span></h3>
+  
+</div>
+
+<div STYLE="margin-top: 10px; margin-left: 
+17px;">
+  <FONT FACE="ARIAL" color="#663399"; size="3px" margin="50px 20px";><B>Plataforma Universitaria de Compartición de Conocimiento</B></FONT>
+  </div>
+
+{% endblock %}
+{% block articuloPrincipal %}
+{% if usuario %}
+  <div>
+    <h4>Bienvenido: </h4>
+    <h3>{{usuario}}</h3>
+  </div>
+{% else %}
+<div>
+  <p>Se trata de una plataforma académica de compartición de archivos de la Universidad de Granada, que permite la colaboración en grupo entre los usuarios del sistema.</p>
+
+  <!-- <p style="float: right;margin-top: -18%;margin-right: 0px;">Desarrollado por: <strong>Miguel Fernández Fernández</strong></p> -->
+
+</div>
+{% endif %}
+{% endblock %}
